@@ -12,7 +12,8 @@ client = OpenAI(
     base_url=config.get("AzureOpenAI", "END_POINT"),
     default_query={"api-version": "preview"},
 )
-
+def minus(a: int, b: int) -> int:
+    return a - b
 
 def get_weather(city: str) -> dict:
     """Retrieves the current weather report for a specified city.
