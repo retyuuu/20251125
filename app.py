@@ -12,8 +12,6 @@ client = OpenAI(
     base_url=config.get("AzureOpenAI", "END_POINT"),
     default_query={"api-version": "preview"},
 )
-def add(a: int, b: int) -> int:
-    return a + b
 
 
 def get_weather(city: str) -> dict:
